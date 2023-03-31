@@ -6,5 +6,6 @@
             primaryKey: "1"
         }
     }
+    console.log("pusdu");
     e.waitUntil(self.registration.showNotification("Yeni makale eklendi", config));
 })
