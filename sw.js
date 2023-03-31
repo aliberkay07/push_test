@@ -1,4 +1,4 @@
-﻿self.addEventListener("pash", (e) => {
+﻿self.addEventListener("push", (e) => {
     const config = {
         body: "mesaj içeriği",
         data: {
@@ -6,6 +6,5 @@
             primaryKey: "1"
         }
     }
-    console.log("pusdu");
     e.waitUntil(self.registration.showNotification("Yeni makale eklendi", config));
 })
